@@ -1,0 +1,370 @@
+{
+  "section": "PR6",
+  "title": "Rational Equations",
+  "learningObjective": "Solve rational equations.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What is a rational equation, and how is it different from a rational expression?",
+      "answer": "A rational <strong>expression</strong> is a ratio of two polynomials, like \\( \\dfrac{x-3}{x-8} \\) — it has no equals sign, so there's nothing to solve, only something to simplify or evaluate. A rational <strong>equation</strong> sets two such expressions (or a mix of expressions and constants) equal to each other, like \\( \\dfrac{2}{x+5}=\\dfrac{x-3}{x-8}-7 \\) — now there's a specific value (or values) of x that makes the whole statement true, and finding it is the actual task."
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "Why do I need to find excluded values before I even start solving?",
+      "answer": "Because whatever value makes a denominator equal to zero can never be part of the solution — division by zero is undefined, full stop, no matter what the rest of the equation looks like. Finding these values up front means you already know, before you do a single step of algebra, which answers you'll have to reject later if they show up.<div class=\"graph-wrap\"><svg viewBox=\"0 0 460 410\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><marker id=\"a2\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"4.5\" orient=\"auto\"><path d=\"M0,0 L9,4.5 L0,9 Z\" fill=\"#0a3f52\"/></marker><rect x=\"10\" y=\"8\" width=\"430\" height=\"90\" rx=\"8\" fill=\"white\" stroke=\"#1a6b6b\" stroke-width=\"2.8\"/><circle cx=\"40\" cy=\"38\" r=\"18\" fill=\"#1a6b6b\"/><text x=\"40.0\" y=\"45.0\" font-size=\"18\" fill=\"white\" font-weight=\"700\" text-anchor=\"middle\" >1</text><text x=\"68.0\" y=\"35.0\" font-size=\"15.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"start\" >Find excluded values</text><text x=\"68.0\" y=\"58.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >Set every denominator equal to 0 and solve —</text><text x=\"68.0\" y=\"75.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >these values can never be solutions.</text><line x1=\"40.0\" y1=\"98.0\" x2=\"40.0\" y2=\"112.0\" stroke=\"#0a3f52\" stroke-width=\"2.2\" marker-end=\"url(#a2)\"/><rect x=\"10\" y=\"112\" width=\"430\" height=\"90\" rx=\"8\" fill=\"white\" stroke=\"#D4622A\" stroke-width=\"2.8\"/><circle cx=\"40\" cy=\"142\" r=\"18\" fill=\"#D4622A\"/><text x=\"40.0\" y=\"149.0\" font-size=\"18\" fill=\"white\" font-weight=\"700\" text-anchor=\"middle\" >2</text><text x=\"68.0\" y=\"139.0\" font-size=\"15.5\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"start\" >Clear the fractions</text><text x=\"68.0\" y=\"162.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >Multiply every term by the LCD, or</text><text x=\"68.0\" y=\"179.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >cross-multiply if the equation is a single</text><text x=\"68.0\" y=\"196.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >fraction equal to a single fraction.</text><line x1=\"40.0\" y1=\"202.0\" x2=\"40.0\" y2=\"216.0\" stroke=\"#0a3f52\" stroke-width=\"2.2\" marker-end=\"url(#a2)\"/><rect x=\"10\" y=\"216\" width=\"430\" height=\"90\" rx=\"8\" fill=\"white\" stroke=\"#0a3f52\" stroke-width=\"2.8\"/><circle cx=\"40\" cy=\"246\" r=\"18\" fill=\"#0a3f52\"/><text x=\"40.0\" y=\"253.0\" font-size=\"18\" fill=\"white\" font-weight=\"700\" text-anchor=\"middle\" >3</text><text x=\"68.0\" y=\"243.0\" font-size=\"15.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"start\" >Solve the result</text><text x=\"68.0\" y=\"266.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >You'll get a linear or quadratic equation with</text><text x=\"68.0\" y=\"283.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >no fractions left — solve it normally.</text><line x1=\"40.0\" y1=\"306.0\" x2=\"40.0\" y2=\"320.0\" stroke=\"#0a3f52\" stroke-width=\"2.2\" marker-end=\"url(#a2)\"/><rect x=\"10\" y=\"320\" width=\"430\" height=\"90\" rx=\"8\" fill=\"white\" stroke=\"#1a6b6b\" stroke-width=\"2.8\"/><circle cx=\"40\" cy=\"350\" r=\"18\" fill=\"#1a6b6b\"/><text x=\"40.0\" y=\"357.0\" font-size=\"18\" fill=\"white\" font-weight=\"700\" text-anchor=\"middle\" >4</text><text x=\"68.0\" y=\"347.0\" font-size=\"15.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"start\" >Check against step 1</text><text x=\"68.0\" y=\"370.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >Throw out any candidate that matches an excluded</text><text x=\"68.0\" y=\"387.0\" font-size=\"12.5\" fill=\"#4a4a5a\" font-weight=\"500\" text-anchor=\"start\" >value. What's left is the real solution set.</text></svg></div><p class=\"graph-caption\">The same four steps solve every rational equation in this section — step 1 and step 4 are what keep you from accepting an invalid answer.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "Why can solving a rational equation produce a \"solution\" that isn't actually valid?",
+      "answer": "The step that clears the fractions (multiplying every term by the LCD) is a legitimate algebra move, but it also creates a brand new equation — one with no denominators left at all, which no longer \\\"remembers\\\" that certain values were off-limits in the original. That cleared equation can therefore hand you back exactly one of those forbidden values as an answer, since nothing in its own structure forbids it anymore. Checking every candidate against your excluded-values list (faq-2) is what catches this."
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "When can I use cross-multiplication, and how does it relate to clearing denominators in general?",
+      "answer": "Cross-multiplication works specifically when the equation is in the form \\( \\dfrac{a}{b}=\\dfrac{c}{d} \\) — a single fraction equal to a single fraction, nothing else added or subtracted on either side. It isn't actually a separate technique: multiplying both sides by \\( b \\) and by \\( d \\) (the general 'clear the fractions' method) produces exactly the same equation, \\( ad=bc \\), that cross-multiplying gives you directly. It's a shortcut for one specific, common equation shape, not a new rule.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( \\dfrac{4}{x+1}=-\\dfrac{2}{x+6} \\) is in exactly this form, so cross-multiplying gives \\( 4(x+6)=-2(x+1) \\) immediately.</p></div>"
+    },
+    {
+      "id": "faq-5",
+      "category": "sticking-points",
+      "question": "How do I find the values that must be excluded from a rational equation's solutions?",
+      "answer": "Set every distinct denominator in the equation equal to zero and solve each one — every value you get has to be excluded, since it would make some part of the original equation undefined.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( \\dfrac{2x}{x-1}-\\dfrac{3}{x-3}=\\dfrac{x^2-11x+18}{x^2-4x+3} \\): the denominators are \\( x-1 \\), \\( x-3 \\), and \\( x^2-4x+3=(x-1)(x-3) \\) — all pointing to the same two excluded values, \\( x=1 \\) and \\( x=3 \\).</p></div>"
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do I clear fractions when there's a constant term in the equation, not just another fraction?",
+      "answer": "Multiply every single term by the LCD — including any bare constant, not only the fractions. Skipping a term because it \"doesn't have a denominator\" is a common way to get the wrong cleared equation.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( 5=-\\dfrac{6}{x-2} \\): multiply both terms by \\( x-2 \\): \\( 5(x-2)=-6 \\), which solves to \\( x=\\dfrac{4}{5} \\) (and \\( \\tfrac{4}{5}\\neq 2 \\), so it's valid).</p></div>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I clear fractions when the denominators aren't already the same or simply related?",
+      "answer": "Multiply every term by the full LCD — the product of every distinct denominator that appears, unless some of them share common factors, in which case use the smallest expression that still contains every denominator as a factor.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( \\dfrac{x}{x+2}=-\\dfrac{2}{x+2}-\\dfrac{2}{5} \\): the LCD is \\( 5(x+2) \\). Multiplying every term by it gives \\( 5x=-10-2(x+2) \\), with no fractions left.</p></div>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I solve a rational equation that simplifies to a quadratic equation?",
+      "answer": "Clear the fractions as usual, and if the result is a quadratic rather than a linear equation, solve it exactly like any other quadratic — factor it, or use the quadratic formula — and then check every candidate root against your excluded values.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( \\dfrac{2x}{x-1}-\\dfrac{3}{x-3}=\\dfrac{x^2-11x+18}{x^2-4x+3} \\), excluded values \\( x=1,3 \\) (faq-5): clearing fractions gives \\( 2x(x-3)-3(x-1)=x^2-11x+18 \\), which simplifies to \\( x^2+2x-15=0 \\).</p><p class=\"math-line\">Factoring: \\( (x+5)(x-3)=0 \\), so the candidates are \\( x=-5 \\) and \\( x=3 \\).</p><p class=\"math-line\">Since \\( x=3 \\) is excluded, only \\( x=-5 \\) is a valid solution.</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I check whether a candidate solution is actually valid?",
+      "answer": "Compare it against your excluded-values list from faq-5 — if it matches one of those values, reject it immediately, no further work needed. If it doesn't match, you can also plug it back into the ORIGINAL equation (with the fractions still in place) as a final confirmation that everything checks out.<div class=\"graph-wrap\"><svg viewBox=\"0 0 460 268\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><line x1=\"40.0\" y1=\"130.0\" x2=\"420.0\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"230.0\" y1=\"20.0\" x2=\"230.0\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\" /><line x1=\"220.0\" y1=\"130.0\" x2=\"220.0\" y2=\"240.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\" /><text x=\"230.0\" y=\"112.0\" font-size=\"15\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >x = −2</text><circle cx=\"230.0\" cy=\"130.0\" r=\"8\" fill=\"#D4622A\"/><text x=\"230.0\" y=\"55.0\" font-size=\"14\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >EXCLUDED</text><text x=\"230.0\" y=\"74.0\" font-size=\"11.5\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >(makes a denominator 0)</text><text x=\"230.0\" y=\"178.0\" font-size=\"14\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >CANDIDATE SOLUTION</text><text x=\"230.0\" y=\"196.0\" font-size=\"11.5\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >(what clearing fractions gives you)</text><text x=\"230.0\" y=\"232.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >Same point — the candidate must be thrown out.</text><text x=\"230.0\" y=\"252.0\" font-size=\"14\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >No other candidates remain, so there is NO SOLUTION.</text></svg></div><p class=\"graph-caption\">For x/(x+2) = −2/(x+2) − 2/5, clearing fractions gives the candidate x = −2 — but x = −2 is exactly the value excluded in step 1. The candidate and the excluded value land on the same point, so it isn't a real solution.</p>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "What does it mean when every candidate solution turns out to be excluded?",
+      "answer": "It means the rational equation genuinely has NO SOLUTION — not that you made a mistake somewhere. This is a completely valid, correct final answer in its own right, and it's exactly why checking candidates against the excluded list (rather than skipping that step) matters: without it, you'd have wrongly reported an invalid value as if it were a real answer."
+    },
+    {
+      "id": "faq-11",
+      "category": "connections",
+      "question": "How does finding excluded values here connect to domain restrictions in general?",
+      "answer": "An excluded value in a rational equation is exactly the same idea as a restricted value in a rational function's domain — both come from asking \\\"where does a denominator equal zero?\\\" The only difference is what you do with that information afterward: for a function, it tells you where the domain stops; for an equation, it tells you which candidate answers must be thrown out."
+    },
+    {
+      "id": "faq-12",
+      "category": "connections",
+      "question": "How does this connect to PR7's rational function graphs (vertical asymptotes and holes)?",
+      "answer": "The excluded values you find here are precisely the x-values where PR7's rational functions have a vertical asymptote or a hole — the graph simply cannot exist at those points. An extraneous \\\"solution\\\" (faq-3, faq-10) is really just an algebra process momentarily forgetting that the function was never defined there in the first place; PR7 makes visible, on a graph, exactly the restriction this section enforces symbolically."
+    },
+    {
+      "id": "faq-13",
+      "category": "connections",
+      "question": "Why do rational equations matter beyond this course?",
+      "answer": "Rational equations show up anywhere a rate, a ratio, or a combined process is involved — mixing solutions of different concentrations, combined work rates (two people or machines working together), or resistors wired in parallel in a circuit all lead directly to a rational equation. Recognizing which values are physically impossible to begin with (like a negative amount of time, or a resistance of zero) is often the real-world version of checking for excluded values."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Solve Basic Rational Equations",
+      "url": "https://youtu.be/R9y2D9VFw0I",
+      "description": "An introduction to solving rational equations by clearing the denominators and checking for excluded values.",
+      "category": "solving",
+      "relatedFaqs": [
+        "faq-5",
+        "faq-6"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Solve Rational Equations with Like Denominators",
+      "url": "https://youtu.be/gGA-dF_aQQQ",
+      "description": "Solving a rational equation where the denominators already match, a simpler special case of clearing fractions.",
+      "category": "solving",
+      "relatedFaqs": [
+        "faq-7"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Solve a Rational Equation with No Solution: x/(3x-9) - 6 = 1/(x-3)",
+      "url": "https://youtu.be/JVQSBKpFcjk",
+      "description": "A worked example where clearing the fractions produces a candidate that turns out to be an excluded value, leaving no solution — the same situation as faq-9 and faq-10.",
+      "category": "extraneous",
+      "relatedFaqs": [
+        "faq-9",
+        "faq-10"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Finding Excluded Values",
+        "prompt": "I'm learning to find excluded values before solving a rational equation. Give me a rational equation and ask me to identify every value that must be excluded, by setting each denominator equal to zero. Give me a few more examples of increasing difficulty, including one where two different denominators share a common factor."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice Clearing Fractions",
+        "prompt": "Give me a rational equation and walk me through clearing the fractions: finding the LCD, multiplying every term by it, and simplifying. Include at least one example with a constant term (not just fractions) so I practice remembering to multiply that term too."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Solving and Checking Candidates",
+        "prompt": "Give me a rational equation that simplifies into a quadratic after clearing fractions. Walk me through finding the excluded values first, then clearing fractions, solving the quadratic, and checking each candidate solution against the excluded list. Make sure at least one problem has a candidate that gets thrown out."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Recognize When There's No Solution",
+        "prompt": "Give me a rational equation where every candidate solution turns out to be excluded, so the final answer is 'no solution.' Walk me through the whole process so I can see exactly where and why this happens, and help me understand why this is a valid final answer rather than a mistake."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect Excluded Values to Rational Function Graphs",
+        "prompt": "I've learned to find excluded values when solving rational equations, and I know this connects to vertical asymptotes and holes in rational function graphs (PR7). Can you help me see this connection with a specific example — show me a rational equation and its matching rational function, and point out exactly how the excluded value shows up in both places?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section PR6 (Rational Equations). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  },
+  "paths": [
+    {
+      "id": "PR6",
+      "label": "PR6: Rational Equations",
+      "sectionLabel": "PR6, Rational Equations",
+      "intro": "Builds to the PR6 check: solve rational equations with exact answers and explain why an extraneous solution is rejected.",
+      "graphs": {
+        "GR4": "<div class=\"graph-wrap\"><svg viewBox=\"0 0 440 250\" width=\"440\" style=\"max-width:100%;height:auto\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Graph of the left side of 1 + 2/(x-3) - 10/((x-3)(x+2)), which simplifies to (x+4)/(x+2) except at x = 3, where there is a hole. The graph crosses zero only at x = -4. At x = 3 the function is undefined (an open circle at height 7/5), so x = 3 is never a solution. There is a vertical asymptote at x = -2.\"><line class=\"g-axis\" x1=\"26.0\" y1=\"125.0\" x2=\"414.0\" y2=\"125.0\" /><line class=\"g-axis\" x1=\"244.2\" y1=\"224.0\" x2=\"244.2\" y2=\"26.0\" /><text class=\"g-label\" x=\"50.2\" y=\"139.0\" text-anchor=\"middle\">−8</text><text class=\"g-label\" x=\"98.8\" y=\"139.0\" text-anchor=\"middle\">−6</text><text class=\"g-label\" x=\"147.2\" y=\"139.0\" text-anchor=\"middle\">−4</text><text class=\"g-label\" x=\"195.8\" y=\"139.0\" text-anchor=\"middle\">−2</text><text class=\"g-label\" x=\"292.8\" y=\"139.0\" text-anchor=\"middle\">2</text><text class=\"g-label\" x=\"317.0\" y=\"139.0\" text-anchor=\"middle\">3</text><text class=\"g-label\" x=\"341.2\" y=\"139.0\" text-anchor=\"middle\">4</text><text class=\"g-label\" x=\"389.8\" y=\"139.0\" text-anchor=\"middle\">6</text><line class=\"g-asym\" x1=\"195.8\" y1=\"224.0\" x2=\"195.8\" y2=\"26.0\" /><text class=\"g-asymtext\" x=\"191.8\" y=\"36.0\" text-anchor=\"end\">x = −2</text><polyline class=\"g-line\" points=\"26.0,104.8 26.6,104.8 27.1,104.8 27.7,104.9 28.2,104.9 28.8,104.9 29.3,105.0 29.9,105.0 30.4,105.0 31.0,105.0 31.5,105.1 32.1,105.1 32.6,105.1 33.2,105.2 33.8,105.2 34.3,105.2 34.9,105.2 35.4,105.3 36.0,105.3 36.5,105.3 37.1,105.4 37.6,105.4 38.2,105.4 38.7,105.5 39.3,105.5 39.8,105.5 40.4,105.5 41.0,105.6 41.5,105.6 42.1,105.6 42.6,105.7 43.2,105.7 43.7,105.7 44.3,105.8 44.8,105.8 45.4,105.8 45.9,105.9 46.5,105.9 47.0,105.9 47.6,106.0 48.1,106.0 48.7,106.0 49.3,106.1 49.8,106.1 50.4,106.2 50.9,106.2 51.5,106.2 52.0,106.3 52.6,106.3 53.1,106.3 53.7,106.4 54.2,106.4 54.8,106.4 55.3,106.5 55.9,106.5 56.5,106.6 57.0,106.6 57.6,106.6 58.1,106.7 58.7,106.7 59.2,106.8 59.8,106.8 60.3,106.8 60.9,106.9 61.4,106.9 62.0,107.0 62.5,107.0 63.1,107.1 63.7,107.1 64.2,107.1 64.8,107.2 65.3,107.2 65.9,107.3 66.4,107.3 67.0,107.4 67.5,107.4 68.1,107.5 68.6,107.5 69.2,107.6 69.7,107.6 70.3,107.6 70.9,107.7 71.4,107.7 72.0,107.8 72.5,107.8 73.1,107.9 73.6,107.9 74.2,108.0 74.7,108.0 75.3,108.1 75.8,108.2 76.4,108.2 76.9,108.3 77.5,108.3 78.0,108.4 78.6,108.4 79.2,108.5 79.7,108.5 80.3,108.6 80.8,108.7 81.4,108.7 81.9,108.8 82.5,108.8 83.0,108.9 83.6,108.9 84.1,109.0 84.7,109.1 85.2,109.1 85.8,109.2 86.4,109.3 86.9,109.3 87.5,109.4 88.0,109.4 88.6,109.5 89.1,109.6 89.7,109.6 90.2,109.7 90.8,109.8 91.3,109.9 91.9,109.9 92.4,110.0 93.0,110.1 93.6,110.1 94.1,110.2 94.7,110.3 95.2,110.4 95.8,110.4 96.3,110.5 96.9,110.6 97.4,110.7 98.0,110.7 98.5,110.8 99.1,110.9 99.6,111.0 100.2,111.1 100.8,111.2 101.3,111.2 101.9,111.3 102.4,111.4 103.0,111.5 103.5,111.6 104.1,111.7 104.6,111.8 105.2,111.9 105.7,112.0 106.3,112.0 106.8,112.1 107.4,112.2 107.9,112.3 108.5,112.4 109.1,112.5 109.6,112.6 110.2,112.7 110.7,112.8 111.3,113.0 111.8,113.1 112.4,113.2 112.9,113.3 113.5,113.4 114.0,113.5 114.6,113.6 115.1,113.7 115.7,113.9 116.3,114.0 116.8,114.1 117.4,114.2 117.9,114.3 118.5,114.5 119.0,114.6 119.6,114.7 120.1,114.9 120.7,115.0 121.2,115.1 121.8,115.3 122.3,115.4 122.9,115.5 123.5,115.7 124.0,115.8 124.6,116.0 125.1,116.1 125.7,116.3 126.2,116.4 126.8,116.6 127.3,116.8 127.9,116.9 128.4,117.1 129.0,117.3 129.5,117.4 130.1,117.6 130.7,117.8 131.2,118.0 131.8,118.2 132.3,118.3 132.9,118.5 133.4,118.7 134.0,118.9 134.5,119.1 135.1,119.3 135.6,119.5 136.2,119.7 136.7,120.0 137.3,120.2 137.8,120.4 138.4,120.6 139.0,120.9 139.5,121.1 140.1,121.3 140.6,121.6 141.2,121.8 141.7,122.1 142.3,122.4 142.8,122.6 143.4,122.9 143.9,123.2 144.5,123.5 145.0,123.8 145.6,124.1 146.2,124.4 146.7,124.7 147.3,125.0 147.8,125.3 148.4,125.7 148.9,126.0 149.5,126.4 150.0,126.7 150.6,127.1 151.1,127.5 151.7,127.9 152.2,128.2 152.8,128.7 153.4,129.1 153.9,129.5 154.5,129.9 155.0,130.4 155.6,130.9 156.1,131.3 156.7,131.8 157.2,132.3 157.8,132.8 158.3,133.4 158.9,133.9 159.4,134.5 160.0,135.1 160.6,135.7 161.1,136.3 161.7,137.0 162.2,137.6 162.8,138.3 163.3,139.0 163.9,139.8 164.4,140.5 165.0,141.3 165.5,142.1 166.1,143.0 166.6,143.8 167.2,144.8 167.7,145.7 168.3,146.7 168.9,147.7 169.4,148.8 170.0,149.9 170.5,151.1 171.1,152.3 171.6,153.6 172.2,154.9 172.7,156.3 173.3,157.8 173.8,159.3 174.4,161.0 174.9,162.7 175.5,164.5 176.1,166.4 176.6,168.4 177.2,170.5 177.7,172.8 178.3,175.2 178.8,177.8 179.4,180.5 179.9,183.4 180.5,186.6 181.0,190.0 181.6,193.6 182.1,197.6 182.7,201.8 183.3,206.5 183.8,211.6 184.4,217.2 184.9,223.3\"/><polyline class=\"g-line\" points=\"215.8,28.4 216.6,30.8 217.3,33.0 218.0,35.0 218.7,36.9 219.4,38.8 220.1,40.5 220.8,42.1 221.6,43.6 222.3,45.0 223.0,46.4 223.7,47.6 224.4,48.9 225.1,50.0 225.9,51.1 226.6,52.2 227.3,53.2 228.0,54.2 228.7,55.1 229.4,56.0 230.1,56.8 230.9,57.6 231.6,58.4 232.3,59.2 233.0,59.9 233.7,60.6 234.4,61.3 235.2,61.9 235.9,62.5 236.6,63.1 237.3,63.7 238.0,64.3 238.7,64.8 239.4,65.3 240.2,65.8 240.9,66.3 241.6,66.8 242.3,67.2 243.0,67.7 243.7,68.1 244.5,68.5 245.2,69.0 245.9,69.4 246.6,69.7 247.3,70.1 248.0,70.5 248.7,70.8 249.5,71.2 250.2,71.5 250.9,71.8 251.6,72.2 252.3,72.5 253.0,72.8 253.8,73.1 254.5,73.4 255.2,73.6 255.9,73.9 256.6,74.2 257.3,74.4 258.0,74.7 258.8,74.9 259.5,75.2 260.2,75.4 260.9,75.7 261.6,75.9 262.3,76.1 263.1,76.3 263.8,76.5 264.5,76.8 265.2,77.0 265.9,77.2 266.6,77.4 267.3,77.6 268.1,77.7 268.8,77.9 269.5,78.1 270.2,78.3 270.9,78.5 271.6,78.6 272.4,78.8 273.1,79.0 273.8,79.1 274.5,79.3 275.2,79.5 275.9,79.6 276.6,79.8 277.4,79.9 278.1,80.1 278.8,80.2 279.5,80.3 280.2,80.5 280.9,80.6 281.7,80.7 282.4,80.9 283.1,81.0 283.8,81.1 284.5,81.3 285.2,81.4 285.9,81.5 286.7,81.6 287.4,81.7 288.1,81.9 288.8,82.0 289.5,82.1 290.2,82.2 291.0,82.3 291.7,82.4 292.4,82.5 293.1,82.6 293.8,82.7 294.5,82.8 295.2,82.9 296.0,83.0 296.7,83.1 297.4,83.2 298.1,83.3 298.8,83.4 299.5,83.5 300.3,83.6 301.0,83.7 301.7,83.8 302.4,83.9 303.1,83.9 303.8,84.0 304.5,84.1 305.3,84.2 306.0,84.3 306.7,84.3 307.4,84.4 308.1,84.5 308.8,84.6 309.6,84.7 310.3,84.7 311.0,84.8 311.7,84.9 312.4,85.0 313.1,85.0 313.8,85.1 314.6,85.2 315.3,85.2 316.0,85.3 316.7,85.4 317.4,85.4 318.1,85.5 318.9,85.6 319.6,85.6 320.3,85.7 321.0,85.8 321.7,85.8 322.4,85.9 323.1,85.9 323.9,86.0 324.6,86.1 325.3,86.1 326.0,86.2 326.7,86.2 327.4,86.3 328.2,86.4 328.9,86.4 329.6,86.5 330.3,86.5 331.0,86.6 331.7,86.6 332.4,86.7 333.2,86.7 333.9,86.8 334.6,86.8 335.3,86.9 336.0,86.9 336.7,87.0 337.5,87.0 338.2,87.1 338.9,87.1 339.6,87.2 340.3,87.2 341.0,87.3 341.7,87.3 342.5,87.4 343.2,87.4 343.9,87.5 344.6,87.5 345.3,87.5 346.0,87.6 346.8,87.6 347.5,87.7 348.2,87.7 348.9,87.8 349.6,87.8 350.3,87.8 351.0,87.9 351.8,87.9 352.5,88.0 353.2,88.0 353.9,88.0 354.6,88.1 355.3,88.1 356.1,88.2 356.8,88.2 357.5,88.2 358.2,88.3 358.9,88.3 359.6,88.3 360.3,88.4 361.1,88.4 361.8,88.5 362.5,88.5 363.2,88.5 363.9,88.6 364.6,88.6 365.4,88.6 366.1,88.7 366.8,88.7 367.5,88.7 368.2,88.8 368.9,88.8 369.6,88.8 370.4,88.9 371.1,88.9 371.8,88.9 372.5,89.0 373.2,89.0 373.9,89.0 374.7,89.0 375.4,89.1 376.1,89.1 376.8,89.1 377.5,89.2 378.2,89.2 378.9,89.2 379.7,89.3 380.4,89.3 381.1,89.3 381.8,89.3 382.5,89.4 383.2,89.4 384.0,89.4 384.7,89.5 385.4,89.5 386.1,89.5 386.8,89.5 387.5,89.6 388.2,89.6 389.0,89.6 389.7,89.6 390.4,89.7 391.1,89.7 391.8,89.7 392.5,89.7 393.3,89.8 394.0,89.8 394.7,89.8 395.4,89.8 396.1,89.9 396.8,89.9 397.5,89.9 398.3,89.9 399.0,90.0 399.7,90.0 400.4,90.0 401.1,90.0 401.8,90.1 402.6,90.1 403.3,90.1 404.0,90.1 404.7,90.1 405.4,90.2 406.1,90.2 406.8,90.2 407.6,90.2 408.3,90.3 409.0,90.3 409.7,90.3 410.4,90.3 411.1,90.3 411.9,90.4 412.6,90.4 413.3,90.4 414.0,90.4\"/><circle cx=\"147.2\" cy=\"125.0\" r=\"6\" fill=\"#15803d\"/><text class=\"g-name g-halo\" x=\"147.2\" y=\"147.0\" text-anchor=\"middle\">x = −4: solution</text><circle class=\"g-open\" cx=\"317.0\" cy=\"85.4\" r=\"5\"/><text class=\"g-anntext g-halo\" x=\"317.0\" y=\"73.4\" text-anchor=\"middle\">hole at x = 3</text><line class=\"g-horiz\" x1=\"317.0\" y1=\"224.0\" x2=\"317.0\" y2=\"26.0\" /><text class=\"g-anntext g-halo\" x=\"323.0\" y=\"204.0\" text-anchor=\"start\">x = 3 not allowed</text></svg></div>",
+        "S2": "<div class=\"table-wrap\"><table class=\"lookup steps\"><tr><th scope=\"col\">Step</th><th scope=\"col\">Work</th><th scope=\"col\">Tool</th></tr><tr><td>Excluded</td><td>\\(x-3\\neq0\\Rightarrow x\\neq3\\)</td><td><span class=\"pr-badge pr-reject\">Excluded values</span></td></tr><tr><td>Clear</td><td>Multiply both sides by \\(x-3\\): \\(8=-6(x-3)\\)</td><td><span class=\"pr-badge pr-prod\">Clear fractions</span></td></tr><tr><td>Solve</td><td>\\(8=-6x+18\\Rightarrow 6x=10\\Rightarrow x=\\tfrac53\\)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>Check</td><td>\\(\\tfrac53\\neq3\\): keep it. \\(\\tfrac53-3=-\\tfrac43\\) and \\(8\\div(-\\tfrac43)=-6\\) ✓</td><td><span class=\"pr-badge pr-prod\">Keep</span></td></tr></table></div>",
+        "S3": "<div class=\"table-wrap\"><table class=\"lookup steps\"><tr><th scope=\"col\">Step</th><th scope=\"col\">Work</th><th scope=\"col\">Tool</th></tr><tr><td>Excluded</td><td>\\(x\\neq5,\\ x\\neq4\\)</td><td><span class=\"pr-badge pr-reject\">Excluded values</span></td></tr><tr><td>LCD</td><td>\\((x-5)(x-4)\\)</td><td><span class=\"pr-badge pr-pow\">LCD</span></td></tr><tr><td>Clear</td><td>\\((x+3)(x-4)+(x-5)(x-4)=(x-1)(x-5)\\)</td><td><span class=\"pr-badge pr-prod\">Clear fractions</span></td></tr><tr><td>Expand</td><td>\\(x^2-x-12+x^2-9x+20=x^2-6x+5\\)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>Quadratic</td><td>\\(x^2-4x+3=0\\Rightarrow(x-1)(x-3)=0\\Rightarrow x=1,\\ 3\\)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>Check</td><td>Neither 1 nor 3 is excluded: both are solutions.</td><td><span class=\"pr-badge pr-prod\">Keep</span></td></tr></table></div>",
+        "S4": "<div class=\"table-wrap\"><table class=\"lookup steps\"><tr><th scope=\"col\">Step</th><th scope=\"col\">Work</th><th scope=\"col\">Tool</th></tr><tr><td>Excluded</td><td>\\(x\\neq3,\\ x\\neq-2\\)</td><td><span class=\"pr-badge pr-reject\">Excluded values</span></td></tr><tr><td>Clear</td><td>Multiply by \\((x-3)(x+2)\\): \\((x-3)(x+2)+2(x+2)-10=0\\)</td><td><span class=\"pr-badge pr-prod\">Clear fractions</span></td></tr><tr><td>Simplify</td><td>\\(x^2+x-12=0\\Rightarrow(x-3)(x+4)=0\\)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>Reject</td><td>\\(x=3\\) makes \\(x-3=0\\) in a denominator of the original equation: not in the domain.</td><td><span class=\"pr-badge pr-reject\">Reject</span></td></tr><tr><td>Keep</td><td>\\(x=-4\\) is the only solution.</td><td><span class=\"pr-badge pr-prod\">Keep</span></td></tr></table></div>",
+        "SF": "<div class=\"table-wrap\"><table class=\"lookup steps\"><tr><th scope=\"col\">Step</th><th scope=\"col\">Work</th><th scope=\"col\">Tool</th></tr><tr><td>(1)</td><td>\\(x\\neq-4\\). \\(-10=3(x+4)\\Rightarrow x=-\\tfrac{22}{3}\\)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>(2) clear</td><td>\\(x\\neq-1,-2\\). LCD \\((x+1)(x+2)\\): \\((x+9)(x+2)=(x+5)(x+1)-(x+1)(x+2)\\)</td><td><span class=\"pr-badge pr-prod\">Clear fractions</span></td></tr><tr><td>(2) solve</td><td>\\(x^2+11x+18=3x+3\\Rightarrow x^2+8x+15=0\\Rightarrow x=-3,\\ -5\\) (neither excluded)</td><td><span class=\"pr-badge pr-quot\">Solve</span></td></tr><tr><td>(3)</td><td>\\(x=-4\\) solves \\((x+4)(x-5)=0\\), but \\(x+4\\) is a factor of a denominator of the original equation, so \\(-4\\) is not in its domain. Only \\(x=5\\) works.</td><td><span class=\"pr-badge pr-reject\">Reject</span></td></tr></table></div>"
+      },
+      "stages": [
+        {
+          "stage": "Get ready",
+          "desc": "Three quick reviews PR6 leans on: clearing fractions, solving quadratics by factoring, and finding an LCD. Skip any you already have.",
+          "stops": [
+            {
+              "id": "pr6-g1",
+              "title": "Clear fractions in a linear equation",
+              "target": "Multiply every term by the LCD of the number denominators, then solve.",
+              "cold": "Solve \\(\\dfrac{x}{3}+\\dfrac14=\\dfrac56\\).",
+              "coldPlain": "Solve x/3 + 1/4 = 5/6.",
+              "coldA": "Multiply by 12: \\(4x+3=10\\), so \\(x=\\tfrac74\\).",
+              "solution": "The LCD of 3, 4, 6 is 12. 12(x/3) + 12(1/4) = 12(5/6) gives 4x + 3 = 10, so x = 7/4.",
+              "mistake": "Multiplying only the fractions you like and skipping one term.",
+              "again": "Solve \\(\\dfrac{2x}{5}-1=\\dfrac{x}{2}\\).",
+              "againA": "Multiply by 10: \\(4x-10=5x\\), so \\(x=-10\\).",
+              "reflect": "Why must every term, including whole numbers, be multiplied by the LCD?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                }
+              ]
+            },
+            {
+              "id": "pr6-g2",
+              "title": "Solve quadratics by factoring",
+              "target": "Move everything to one side, factor, and use the zero product property (PR1/PR2).",
+              "cold": "Solve (1) \\(x^2+2x-15=0\\) (2) \\(3x^2-10x-8=0\\)",
+              "coldPlain": "Solve (1) x^2 + 2x - 15 = 0 (2) 3x^2 - 10x - 8 = 0",
+              "coldA": "(1) \\((x+5)(x-3)=0\\): \\(x=-5,3\\) (2) \\((3x+2)(x-4)=0\\): \\(x=-\\tfrac23,4\\)",
+              "solution": "(1) Factors of -15 that add to 2: 5 and -3. (2) (3x + 2)(x - 4) = 3x^2 - 10x - 8, so x = -2/3 or 4.",
+              "mistake": "Solving x + 5 = 0 as x = 5.",
+              "again": "\\(x^2-4x-21=0\\)",
+              "againA": "\\((x-7)(x+3)\\): \\(x=7,-3\\)",
+              "reflect": "Which factoring move is least automatic for you?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                }
+              ]
+            },
+            {
+              "id": "pr6-g3",
+              "title": "LCD of algebraic denominators",
+              "target": "Factor each denominator; the LCD uses each distinct factor once (with its highest power).",
+              "cold": "Find the LCD of \\(\\dfrac{1}{x-3}\\), \\(\\dfrac{2}{x+2}\\), and \\(\\dfrac{5}{x^2-x-6}\\).",
+              "coldPlain": "Find the LCD of 1/(x-3), 2/(x+2), and 5/(x^2 - x - 6).",
+              "coldA": "\\(x^2-x-6=(x-3)(x+2)\\), so the LCD is \\((x-3)(x+2)\\).",
+              "solution": "Factor x^2 - x - 6 = (x - 3)(x + 2). It already contains both other denominators, so the LCD is (x - 3)(x + 2).",
+              "mistake": "Using (x - 3)(x + 2)(x^2 - x - 6), which repeats factors and makes the algebra harder.",
+              "again": "LCD of \\(\\dfrac{3}{2x}\\), \\(\\dfrac{1}{x+1}\\), \\(\\dfrac{1}{4}\\)",
+              "againA": "\\(4x(x+1)\\)",
+              "reflect": "Why does factoring the denominators first save work?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Learn the skills",
+          "desc": "Excluded values, the two equation types on the CheckIt, and explaining extraneous solutions.",
+          "stops": [
+            {
+              "id": "pr6-t1",
+              "title": "Excluded values first",
+              "target": "Set each denominator equal to zero. Those x-values can never be solutions.",
+              "cold": "What values are excluded? (1) \\(\\dfrac{x+3}{x-5}+1=\\dfrac{x-1}{x-4}\\) (2) \\(1+\\dfrac{2}{x-3}-\\dfrac{10}{(x-3)(x+2)}=0\\)",
+              "coldPlain": "What values are excluded? (1) (x+3)/(x-5) + 1 = (x-1)/(x-4) (2) 1 + 2/(x-3) - 10/((x-3)(x+2)) = 0",
+              "coldA": "(1) \\(x\\neq5,\\ x\\neq4\\) (2) \\(x\\neq3,\\ x\\neq-2\\)",
+              "solution": "(1) x - 5 = 0 gives 5; x - 4 = 0 gives 4. (2) x - 3 = 0 gives 3; x + 2 = 0 gives -2.",
+              "mistake": "Setting the numerators equal to zero instead of the denominators.",
+              "again": "\\(3=\\dfrac14-\\dfrac{5}{2x}\\)",
+              "againA": "\\(x\\neq0\\)",
+              "reflect": "Why write the excluded values before solving, not after?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                }
+              ]
+            },
+            {
+              "id": "pr6-t2",
+              "title": "One fraction and constants",
+              "target": "Multiply every term by the LCD, solve the linear equation, and check against the excluded values.",
+              "cold": "Solve \\(\\dfrac{8}{x-3}=-6\\). Give the answer as an integer or fraction.",
+              "coldPlain": "Solve 8/(x-3) = -6. Give the answer as an integer or fraction.",
+              "note": "List the excluded values first, show the LCD and the cleared equation, and check each candidate against the excluded values.",
+              "coldA": "\\(x=\\tfrac53\\)[[graph:S2]]",
+              "solution": "x is not 3. Multiply by x - 3: 8 = -6(x - 3) = -6x + 18, so 6x = 10 and x = 5/3, which is allowed.",
+              "mistake": "Distributing -6(x - 3) as -6x - 18.",
+              "again": "Solve \\(3=\\dfrac14-\\dfrac{5}{2x}\\).",
+              "againA": "\\(x\\neq0\\). Multiply by \\(4x\\): \\(12x=x-10\\), so \\(x=-\\tfrac{10}{11}\\).",
+              "reflect": "Why does the CheckIt ask for a fraction instead of a decimal?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                },
+                {
+                  "label": "Videos",
+                  "tab": "tab-videos"
+                }
+              ]
+            },
+            {
+              "id": "pr6-t3",
+              "title": "Two fractions: clear to a quadratic",
+              "target": "Use the LCD of both denominators, expand, collect into a quadratic, factor, and check both candidates.",
+              "cold": "Solve \\(\\dfrac{x+3}{x-5}+1=\\dfrac{x-1}{x-4}\\).",
+              "coldPlain": "Solve (x+3)/(x-5) + 1 = (x-1)/(x-4).",
+              "note": "List the excluded values first, show the LCD and the cleared equation, and check each candidate against the excluded values.",
+              "coldA": "\\(x=1,\\ 3\\)[[graph:S3]]",
+              "solution": "Excluded: 5 and 4. Multiply by (x - 5)(x - 4): (x + 3)(x - 4) + (x - 5)(x - 4) = (x - 1)(x - 5). Expand: 2x^2 - 10x + 8 = x^2 - 6x + 5, so x^2 - 4x + 3 = 0 = (x - 1)(x - 3). Both 1 and 3 are allowed.",
+              "mistake": "Forgetting to multiply the 1 by the LCD, which drops the (x - 5)(x - 4) term.",
+              "again": "Solve \\(\\dfrac{x+11}{x-1}+1=\\dfrac{x+5}{x-2}\\).",
+              "againA": "Excluded 1, 2. \\(x^2+2x-15=0\\): \\(x=-5,\\ 3\\).",
+              "reflect": "What signals that a rational equation will turn into a quadratic?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                },
+                {
+                  "label": "Videos",
+                  "tab": "tab-videos"
+                },
+                {
+                  "label": "AI Prompts",
+                  "tab": "tab-prompts"
+                }
+              ]
+            },
+            {
+              "id": "pr6-t4",
+              "title": "Extraneous solutions: explain the rejection",
+              "target": "A candidate that makes any original denominator zero is not in the domain, so it cannot be a solution, even if it solves the cleared equation.",
+              "cold": "After clearing the denominators of \\(1+\\dfrac{2}{x-3}-\\dfrac{10}{(x-3)(x+2)}=0\\) and simplifying, you get \\((x-3)(x+4)=0\\). Explain why the only solution is \\(x=-4\\).",
+              "coldPlain": "After clearing the denominators of 1 + 2/(x-3) - 10/((x-3)(x+2)) = 0 and simplifying, you get (x-3)(x+4) = 0. Explain why the only solution is x = -4.",
+              "note": "Name the denominator that becomes zero and use the word domain in your explanation.",
+              "graphNote": "It shows the left side as a function: it crosses zero only at x = -4 and has a hole at x = 3.",
+              "coldA": "\\(x=3\\) solves \\((x-3)(x+4)=0\\), but \\((x-3)\\) is a factor of a denominator of the original equation, so 3 is not in its domain and cannot be a solution. Only \\(x=-4\\) remains.[[graph:S4]][[graph:GR4]]",
+              "solution": "Setting the factors to zero gives 3 and -4. But substituting x = 3 into the original equation divides by zero (x - 3 = 0), so 3 is not in the domain. The only solution is -4.",
+              "mistake": "Saying \"3 doesn’t work\" without saying why (division by zero / not in the domain).",
+              "again": "Clearing \\(1+\\dfrac{2}{x-2}+\\dfrac{6}{(x-2)(x-5)}=0\\) gives \\((x-2)(x-3)=0\\). Explain why the only solution is \\(x=3\\).",
+              "againA": "\\(x=2\\) makes \\(x-2=0\\) in a denominator of the original equation, so it is not in the domain; \\(x=3\\) is the only solution.",
+              "stretch": "Solve \\(\\dfrac{x}{x-3}=\\dfrac{3}{x-3}+2\\).",
+              "stretchA": "Clearing gives \\(x=3+2(x-3)\\), so \\(x=3\\), which is excluded. <strong>No solution.</strong>",
+              "reflect": "Look at the graph: why does the hole at x = 3 sit off the x-axis?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                },
+                {
+                  "label": "Videos",
+                  "tab": "tab-videos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Put it together",
+          "desc": "A practice check in the same format as the PR6 CheckIt: two equations and one explanation.",
+          "stops": [
+            {
+              "id": "pr6-f1",
+              "title": "Practice check",
+              "target": "Solve rational equations (exact answers) and explain why an extraneous candidate is rejected.",
+              "cold": "Solve. Give solutions as integers or fractions.<br>(1) \\(-\\dfrac{10}{x+4}=3\\)<br>(2) \\(\\dfrac{x+9}{x+1}=\\dfrac{x+5}{x+2}-1\\)<br>(3) After eliminating the denominators of \\(1-\\dfrac{3}{x+4}-\\dfrac{18}{(x+4)(x-2)}=0\\), simplifying, and factoring, you would find \\((x+4)(x-5)=0\\). Explain why the only solution of the original equation is \\(x=5\\).",
+              "coldPlain": "(1) Solve -10/(x+4) = 3. (2) Solve (x+9)/(x+1) = (x+5)/(x+2) - 1. (3) Clearing 1 - 3/(x+4) - 18/((x+4)(x-2)) = 0 gives (x+4)(x-5) = 0. Explain why the only solution is x = 5.",
+              "note": "List the excluded values first, show the LCD and the cleared equation, and check each candidate against the excluded values.",
+              "coldA": "(1) \\(x=-\\tfrac{22}{3}\\) (2) \\(x=-5,\\ -3\\) (3) see the last row.[[graph:SF]]",
+              "solution": "(1) x is not -4. -10 = 3(x + 4) = 3x + 12, so x = -22/3. (2) x is not -1 or -2. Clearing gives x^2 + 11x + 18 = 3x + 3, so x^2 + 8x + 15 = 0 and x = -3 or -5, both allowed. (3) -4 makes x + 4 = 0 in a denominator, so it is not in the domain; only 5 works.",
+              "mistake": "In (2), subtracting (x + 1)(x + 2) incorrectly; distribute the minus sign to every term.",
+              "again": "(1) \\(2=\\dfrac56+\\dfrac{7}{3x}\\) (2) \\(\\dfrac{x-11}{x+1}+1=\\dfrac{x-5}{x+2}\\) (3) Clearing \\(1+\\dfrac{9}{x+3}+\\dfrac{63}{(x+3)(x-4)}=0\\) gives \\((x+3)(x+5)=0\\). Explain why the only solution is \\(x=-5\\).",
+              "againA": "(1) \\(x=2\\) (2) \\(x=-3,\\ 5\\) (3) \\(x=-3\\) makes \\(x+3=0\\) in a denominator, so it is not in the domain.",
+              "reflect": "Which step do you most need to remember on the CheckIt: excluded values, clearing, or checking?",
+              "related": [
+                {
+                  "label": "FAQs",
+                  "tab": "tab-faq"
+                },
+                {
+                  "label": "AI Prompts",
+                  "tab": "tab-prompts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
